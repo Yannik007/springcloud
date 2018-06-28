@@ -1,4 +1,5 @@
-package appConfig.controller;/*
+package appConfig.controller;
+/*
 * @Description :
 * @Date : 2018/6/26  9:26  
 * */
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 作用：
  * ① 测试服务实例的相关内容
  * ② 为后来的服务做提供
- * @author eacdy
+ * @author tyw
  */
 @RestController
 public class UserController {

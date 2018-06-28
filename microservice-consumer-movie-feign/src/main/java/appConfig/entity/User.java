@@ -1,4 +1,5 @@
-package appConfig.entity;/*
+package appConfig.entity;
+/*
 * @Description :
 * @Date : 2018/6/26  10:49
 * */

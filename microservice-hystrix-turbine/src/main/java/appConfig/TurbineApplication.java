@@ -1,4 +1,5 @@
-package appConfig;/*
+package appConfig;
+/*
 * @Description :
 * @Date : 2018/6/26  14:11  
 * */
@@ -22,7 +23,7 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
  *访问：http://localhost:8011/ribbon/1，调用ribbon接口
  *访问：http://localhost:8022/feign/1，调用feign接口
  *访问：http://localhost:8031/turbine.stream，可查看到和Hystrix监控类似的内容：
- * @author eacdy
+ * @author tyw
  */
 @SpringBootApplication
 @EnableTurbine

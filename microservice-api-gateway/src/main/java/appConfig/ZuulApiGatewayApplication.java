@@ -12,7 +12,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
  * 使用@EnableZuulProxy注解激活zuul。
  * 跟进该注解可以看到该注解整合了@EnableCircuitBreaker、@EnableDiscoveryClient，是个组合注解，目的是简化配置。
  * 访问http://localhost:8050/microservice-provider-user/1试试。
- * @author eacdy
+ * @author tyw
  */
 @SpringBootApplication
 @EnableZuulProxy

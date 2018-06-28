@@ -15,7 +15,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
  * 创建接口，为接口添加注解，即可使用Feign。
  * Feign可以使用Feign注解或者JAX-RS注解，还支持热插拔的编码器和解码器。
  * Spring Cloud为Feign添加了Spring MVC的注解支持，并整合了Ribbon和Eureka来为使用Feign时提供负载均衡。
- * @author eacdy
+ * @author tyw
  */
 @SpringBootApplication
 @EnableFeignClients
