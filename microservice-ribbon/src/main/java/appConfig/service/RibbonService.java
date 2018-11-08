@@ -15,6 +15,6 @@ public class RibbonService {
 
     public User findById(Long id) {
         // http://服务提供者的serviceId/url
-        return this.restTemplate.getForObject("MICROSERVICE-PROVIDER-USER" + id, User.class);
+        return this.restTemplate.getForObject("http://"+"MICROSERVICE-PROVIDER-USER" +"/"+ id, User.class);
     }
 }
