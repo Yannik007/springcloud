@@ -9,6 +9,7 @@ microservice-config-server
 
 ## 负载均衡
 microservice-consumer-movie-feign
+
 microservice-ribbon
 
 ## 服务熔断
@@ -19,6 +20,7 @@ microservice-discovery-eureka
 
 ## 运维监控
 microservice-hystrix-dashboard
+
 microservice-hystrix-turbine
 
 ## 服务提供者
