@@ -8,12 +8,7 @@ microservice-api-gateway
 microservice-config-server
 
 ## 负载均衡
-microservice-consumer-movie-feign
-
-microservice-ribbon
-
-## 服务熔断
-microservice-consumer-movie-ribbon-with-hystrix
+microservice-consumer-feign
 
 ## 注册中心
 microservice-discovery-eureka

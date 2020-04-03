@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <description>Spring Cloud为Feign添加了Spring MVC的注解支持实现负载均衡，并整合了Ribbon和Eureka来为使用Feign时提供负载均衡。</description>
 
-    <artifactId>microservice-consumer-movie-feign</artifactId>
+    <artifactId>microservice-consumer-feign</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
