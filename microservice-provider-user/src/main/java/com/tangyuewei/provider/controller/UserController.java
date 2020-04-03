@@ -5,7 +5,7 @@ package com.tangyuewei.provider.controller;
 * */
 
 import com.tangyuewei.provider.entity.User;
-import com.tangyuewei.provider.springCloudDao.UserRepository;
+import com.tangyuewei.provider.dao.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -35,17 +35,8 @@ public class UserController {
      */
     @GetMapping("/{id}")
     public User findById(@PathVariable Long id) {
-        User findOne = this.userRepository.findOne(id);
+        User findOne = userRepository.getOne(id);
         return findOne;
     }
 
-    /**
-     * 本地服务实例的信息
-     * @return
-     */
-    @GetMapping("/instance-info")
-    public ServiceInstance showInfo() {
-        ServiceInstance localServiceInstance = this.discoveryClient.getLocalServiceInstance();
-        return localServiceInstance;
-    }
 }
