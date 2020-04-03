@@ -9,6 +9,8 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    a-sgupdate-interval-ms: 3000
 
 ## Eureka的高可用配置  参考文档 http://cloud.spring.io/spring-cloud-static/Brixton.SR5/#spring-cloud-eureka-server
 # java -jar microservice-discovery-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1
