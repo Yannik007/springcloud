@@ -20,8 +20,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableFeignClients
 @EnableDiscoveryClient
-public class MovieFeignApplication {
+public class FeignApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MovieFeignApplication.class, args);
+        SpringApplication.run(FeignApplication.class, args);
     }
 }
