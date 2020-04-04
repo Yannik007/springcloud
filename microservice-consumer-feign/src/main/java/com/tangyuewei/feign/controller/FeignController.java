@@ -8,11 +8,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 @RestController
 public class FeignController {
     @Autowired
     private UserFeignClient userFeignClient;
-    @Autowired
+    @Resource
     private UserFeignHystrixClient userFeignHystrixClient;
 
     @GetMapping("feign/{id}")
@@ -22,7 +24,7 @@ public class FeignController {
     }
     @GetMapping("feignWithHystrix/{id}")
     public User findByIdFeignWithHystrix(@PathVariable Long id) {
-        User user = this.userFeignHystrixClient.findByIdFeign(id);
+        User user = userFeignHystrixClient.findByIdFeign(id);
         return user;
     }
 }

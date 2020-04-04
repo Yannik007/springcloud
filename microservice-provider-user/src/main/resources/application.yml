@@ -3,25 +3,28 @@ server:
 spring:
   application:
     name: microservice-provider-user    # 项目名称尽量用小写
-  jpa:
-    generate-ddl: false
-    show-sql: true
-    hibernate:
-      ddl-auto: none
   datasource:                           # 指定数据源
-    platform: h2                        # 指定数据源类型
-    schema: classpath:schema.sql        # 指定h2数据库的建表脚本
-    data: classpath:data.sql            # 指定h2数据库的insert脚本
-logging:
-  level:
-    root: INFO
-    org.hibernate: INFO
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
-    com.itmuch.youran.persistence: ERROR
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud?useUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 30
+      idle-timeout: 600000
+      maximum-pool-size: 600
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/    # 指定注册中心的地址
   instance:
     preferIpAddress: true
+
+mybatis:
+  type-aliases-package: com.tangyuewei.provider.domain
+  mapper-locations: classpath:mapper/*.xml

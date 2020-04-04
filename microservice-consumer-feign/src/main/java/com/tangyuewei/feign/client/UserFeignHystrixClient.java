@@ -35,8 +35,8 @@ public interface UserFeignHystrixClient {
         public User findByIdFeign(Long id) {
             HystrixClientFallback.LOGGER.info("异常发生，进入fallback方法，接收的参数：id = {}", id);
             User user = new User();
-            user.setId(-1L);
-            user.setUsername("default username");
+            user.setId(0);
+            user.setName("default username");
             user.setAge(0);
             return user;
         }
