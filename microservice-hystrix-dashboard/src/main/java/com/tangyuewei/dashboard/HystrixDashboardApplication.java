@@ -1,8 +1,4 @@
 package com.tangyuewei.dashboard;
-/*
-* @Description :
-* @Date : 2018/6/26  14:28  
-* */
 
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

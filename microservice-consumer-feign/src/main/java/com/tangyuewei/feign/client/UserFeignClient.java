@@ -1,8 +1,4 @@
 package com.tangyuewei.feign.client;
-/*
-* @Description :
-* @Date : 2018/6/26  10:59  
-* */
 
 import com.tangyuewei.feign.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;

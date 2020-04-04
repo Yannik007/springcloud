@@ -1,8 +1,4 @@
 package com.tangyuewei.provider;
-/*
-* @Description :
-* @Date : 2018/6/26  9:22  
-* */
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

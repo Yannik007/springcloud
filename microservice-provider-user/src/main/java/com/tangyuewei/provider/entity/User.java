@@ -1,9 +1,4 @@
 package com.tangyuewei.provider.entity;
-/*
-* @Description :
-* @Date : 2018/6/26  9:27  
-* */
-
 
 import javax.persistence.*;
 

@@ -1,8 +1,4 @@
 package com.tangyuewei.provider.controller;
-/*
-* @Description :
-* @Date : 2018/6/26  9:26  
-* */
 
 import com.tangyuewei.provider.entity.User;
 import com.tangyuewei.provider.dao.UserRepository;

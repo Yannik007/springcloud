@@ -1,10 +1,5 @@
 package com.tangyuewei.feign.client;
 
-/*
-* @Description :
-* @Date : 2018/6/26  11:25  
-* */
-
 import com.tangyuewei.feign.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

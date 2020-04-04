@@ -1,8 +1,4 @@
 package com.tangyuewei.feign;
-/*
-* @Description :
-* @Date : 2018/6/26  10:56  
-* */
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

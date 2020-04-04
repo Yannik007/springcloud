@@ -13,11 +13,9 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
  * 为此，Netflix提供了一个开源项目（Turbine）来提供把多个hystrix.stream的内容聚合为一个数据源供Dashboard展示。
  * 启动项目：microservice-discovery-eureka
  * 启动项目：microservice-provider-user
- * 启动项目：microservice-consumer-movie-ribbon-with-hystrix
- * 启动项目：microservice-consumer-movie-feign-with-hystrix-stream
+ * 启动项目：microservice-consumer-feign
  * 启动项目：microservice-hystrix-dashboard
  * 启动项目：microservice-hystrix-turbine（即本例）
- * 访问：http://localhost:8011/ribbon/1，调用ribbon接口
  * 访问：http://localhost:8022/feign/1，调用feign接口
  * 访问：http://localhost:8031/turbine.stream，可查看到和Hystrix监控类似的内容：
  * @author tyw
