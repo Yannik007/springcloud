@@ -1,8 +1,4 @@
 package com.tangyuewei.turbine;
-/*
-* @Description :
-* @Date : 2018/6/26  14:11  
-* */
 
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
