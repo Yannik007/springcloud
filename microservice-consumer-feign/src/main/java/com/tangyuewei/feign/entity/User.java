@@ -1,8 +1,4 @@
 package com.tangyuewei.feign.entity;
-/*
-* @Description :
-* @Date : 2018/6/26  10:49
-* */
 
 import java.io.Serializable;
 

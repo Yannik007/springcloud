@@ -1,7 +1,4 @@
-package com.tangyuewei.feign.controller;/*
-* @Description :
-* @Date : 2018/6/26  11:00  
-* */
+package com.tangyuewei.feign.controller;
 
 import com.tangyuewei.feign.client.UserFeignClient;
 import com.tangyuewei.feign.client.UserFeignHystrixClient;
