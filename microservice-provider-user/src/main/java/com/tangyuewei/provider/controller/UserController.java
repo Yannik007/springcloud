@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -17,6 +18,7 @@ import javax.annotation.Resource;
  * @author tyw
  */
 @RestController
+@RequestMapping(value = "user")
 public class UserController {
     @Autowired
     private DiscoveryClient discoveryClient;
@@ -30,7 +32,7 @@ public class UserController {
      * @param id
      * @return user信息
      */
-    @GetMapping("/{id}")
+    @GetMapping("{id}")
     public User findById(@PathVariable Integer id) {
         User findOne = UserMapper.selectByPrimaryKey(id);
         return findOne;
